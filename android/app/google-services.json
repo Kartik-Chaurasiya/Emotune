@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "636615482924",
+    "firebase_url": "https://emotune-6f2c3.firebaseio.com",
+    "project_id": "emotune-6f2c3",
+    "storage_bucket": "emotune-6f2c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636615482924:android:3ed509c589131b8c5afb89",
+        "android_client_info": {
+          "package_name": "com.example.emotune"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636615482924-mifttavr7nvr7a37atsal0n7akj9g8uh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM2xsxlOjWS6fnURoGlo0Zu6V1kWOePI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636615482924-mifttavr7nvr7a37atsal0n7akj9g8uh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
