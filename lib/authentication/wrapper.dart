@@ -1,7 +1,7 @@
+import 'package:emotune/model/model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:emotune/authentication/authenticate/authenticate.dart';
-import '../home.dart';
 import 'models/user.dart';
 
 class Wrapper extends StatelessWidget {
@@ -14,7 +14,7 @@ class Wrapper extends StatelessWidget {
     if (user == null){
       return Authenticate();
     }else {
-      return Home();
+      return MyImagePicker();
     }
   }
 }

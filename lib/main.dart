@@ -1,9 +1,9 @@
+import 'package:emotune/splash_screen.dart/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'authentication/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'authentication/models/user.dart';
-import 'authentication/wrapper.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
     return StreamProvider<CustomClassName>.value(
       value: AuthService().user,
       child: MaterialApp(
-        home: Wrapper(),
+        debugShowCheckedModeBanner: false,
+        home: SplashScreen(),
       ),
     );
   }
