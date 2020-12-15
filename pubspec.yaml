@@ -36,6 +36,10 @@ dependencies:
   shimmer:
   tflite: 
   image_picker:
+  file_picker:
+  firebase_storage:
+  music_player:
+  percent_indicator:
 
 
 dev_dependencies:

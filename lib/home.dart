@@ -1,22 +1,27 @@
 import 'package:emotune/authentication/authenticate/sign_in.dart';
 import 'package:emotune/music_player/music_home.dart';
-import 'package:emotune/music_player/upload.dart';
+// import 'package:emotune/music_player/upload.dart';
 import 'package:flutter/material.dart';
 import 'package:emotune/authentication/services/auth.dart';
 
 class Home extends StatefulWidget {
+  final String mood;
+  Home({this.mood});
   @override
-  _HomeState createState() => _HomeState();
+  _HomeState createState() => _HomeState(mood);
 }
 
 class _HomeState extends State<Home> {
   final AuthService _auth = AuthService();
-  int currentindex = 0;
+  // int currentindex = 0;
 
-  List tabs = [
-    musicHome(),
-    musicUpload()
-  ];
+  // List tabs = [
+  //   mainHome(),
+  //   musicUpload()
+  // ];
+  String mood;
+  _HomeState(this.mood);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,21 +44,23 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
-      body: tabs[currentindex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentindex,
-        items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home),
-        title: Text('Home'),),
-        BottomNavigationBarItem(icon: Icon(Icons.cloud_upload),
-        title: Text('Upload'),),
-      ],
-      onTap: (index){
-        setState(() {
-          currentindex = index;
-        });
-      },
-      ),
+      body: mainHome(mood : mood),
+
+      // tabs[currentindex],
+      // bottomNavigationBar: BottomNavigationBar(
+      //   currentIndex: currentindex,
+      //   items: [
+      //   BottomNavigationBarItem(icon: Icon(Icons.home),
+      //   title: Text('Home'),),
+      //   BottomNavigationBarItem(icon: Icon(Icons.cloud_upload),
+      //   title: Text('Upload'),),
+      // ],
+      // onTap: (index){
+      //   setState(() {
+      //     currentindex = index;
+      //   });
+      // },
+      // ),
     );
   }
 }
