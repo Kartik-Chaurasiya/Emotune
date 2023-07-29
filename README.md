@@ -1,8 +1,6 @@
 # emotune
 ## Emotion Recognition App
 
-![Emotion Recognition App Logo](/images/logo.png)
-
 The Emotion Recognition App is a Flutter-based mobile application that utilizes machine learning to classify a user's emotions based on images taken from the front or back camera. It incorporates a pre-trained machine learning model that accurately identifies emotions like happy, sad, angry, and more. The app also has a music player feature that plays songs tailored to the user's detected emotion, enhancing their experience.
 
 ## Features
@@ -47,9 +45,6 @@ We welcome contributions to enhance the Emotion Recognition App. If you encounte
 
 The development of this app was supported by our research paper titled "Emotion Recognition Using Machine Learning and Its Application in Music Recommendation," which you can find [here](https://www.ijrar.org/papers/IJRAR21B1343.pdf). The paper details the methodology used, the performance of the machine learning model, and the results obtained during the development of the app.
 
-## License
-
-The Emotion Recognition App is licensed under the MIT License. Please see the [LICENSE](/LICENSE) file for more details.
 
 ---
 
