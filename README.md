@@ -22,7 +22,7 @@ To install and run the Emotion Recognition App, follow these steps:
 1. Clone the GitHub repository to your local machine.
 
 ```
-git clone https://github.com/your_username/emotion_recognition_app.git
+git clone https://github.com/Kartik-Chaurasiya/Emotune.git
 ```
 
 2. Open the project in a compatible Flutter IDE (such as Android Studio or Visual Studio Code).
